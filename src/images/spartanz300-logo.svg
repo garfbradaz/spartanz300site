@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="helmetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="plumeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c73a52;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#1a1a2e" stroke="#d4af37" stroke-width="3"/>
+  
+  <!-- Spartan Helmet Base -->
+  <path d="M60 140 L60 80 Q60 45 100 35 Q140 45 140 80 L140 140 Q130 155 100 165 Q70 155 60 140 Z" 
+        fill="url(#helmetGrad)" stroke="#b8860b" stroke-width="2"/>
+  
+  <!-- Helmet Plume -->
+  <path d="M100 35 Q100 15 85 10 Q95 20 100 35" fill="url(#plumeGrad)"/>
+  <path d="M100 35 Q100 10 115 8 Q105 18 100 35" fill="url(#plumeGrad)"/>
+  <path d="M100 35 Q100 5 100 0 Q100 15 100 35" fill="url(#plumeGrad)"/>
+  
+  <!-- Face Guard (T-shape visor) -->
+  <path d="M70 75 L130 75 L130 85 L107 85 L107 145 Q100 150 93 145 L93 85 L70 85 Z" 
+        fill="#16213e" stroke="#0f1a2e" stroke-width="1"/>
+  
+  <!-- Helmet Cheek Guards -->
+  <path d="M65 90 Q55 100 55 120 Q55 140 70 150 L70 140 Q60 130 60 115 Q60 100 70 90 Z" 
+        fill="url(#helmetGrad)" stroke="#b8860b" stroke-width="1"/>
+  <path d="M135 90 Q145 100 145 120 Q145 140 130 150 L130 140 Q140 130 140 115 Q140 100 130 90 Z" 
+        fill="url(#helmetGrad)" stroke="#b8860b" stroke-width="1"/>
+  
+  <!-- "300" text -->
+  <text x="100" y="185" font-family="Arial Black, Arial, sans-serif" font-size="24" 
+        font-weight="bold" fill="#d4af37" text-anchor="middle">300</text>
+</svg>
