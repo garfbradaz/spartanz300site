@@ -73,17 +73,20 @@ function initNavbarBehavior() {
     if (!navbar) return;
 
     // Change navbar style on scroll
-    window.addEventListener('scroll', function() {
+    function handleNavbarScroll() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+        updateActiveNavLink();
+    }
 
-    // Update active nav link based on scroll position
-    updateActiveNavLink();
-    window.addEventListener('scroll', updateActiveNavLink);
+    // Use debounced scroll handler for better performance
+    window.addEventListener('scroll', debounce(handleNavbarScroll, 10));
+    
+    // Initial call
+    handleNavbarScroll();
 }
 
 // ===== Update Active Navigation Link =====
@@ -126,17 +129,4 @@ function debounce(func, wait) {
             func.apply(context, args);
         }, wait);
     };
-}
-
-/**
- * Check if element is in viewport
- */
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
 }

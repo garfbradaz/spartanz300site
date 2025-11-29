@@ -62,6 +62,11 @@ body {
     color: var(--primary-color);
 }
 
+.navbar.scrolled {
+    background-color: var(--secondary-color) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* ===== Section Styles ===== */
 section {
     scroll-margin-top: 56px;
