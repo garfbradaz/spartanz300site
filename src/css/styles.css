@@ -5,12 +5,13 @@
 
 /* ===== CSS Variables ===== */
 :root {
-    --primary-color: #d4af37;
-    --secondary-color: #1a1a2e;
-    --dark-bg: #16213e;
-    --accent-color: #e94560;
-    --text-light: #f1f1f1;
-    --text-muted: #b8b8b8;
+    --primary-color: #A70D0D;    /* Blood Red - primary actions */
+    --primary-light: #F72C2B;    /* Bright Red - hover states */
+    --secondary-color: #150709;  /* Deep Black - backgrounds */
+    --dark-bg: #1a1210;          /* Dark brown-black */
+    --accent-color: #3F5489;     /* Spartan Blue - accents */
+    --text-light: #FBFBFA;       /* Off-white text */
+    --text-muted: #ADA3A2;       /* Silver gray muted text */
 }
 
 /* ===== Global Styles ===== */
@@ -115,14 +116,14 @@ section {
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--text-light);
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #c9a227;
-    border-color: #c9a227;
-    color: var(--secondary-color);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    color: var(--text-light);
 }
 
 .btn-outline-primary {
@@ -133,7 +134,7 @@ section {
 .btn-outline-primary:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--text-light);
 }
 
 /* ===== Footer ===== */
