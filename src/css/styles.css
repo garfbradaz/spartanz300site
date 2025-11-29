@@ -36,7 +36,7 @@ body {
     background-image: url('../images/spartanz300-logo.webp');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 400px 400px;
+    background-size: min(400px, 50vw);
     opacity: 0.15;
 }
 
@@ -148,7 +148,7 @@ footer {
     }
 
     .hero-section::before {
-        background-size: 250px 250px;
+        background-size: min(250px, 60vw);
     }
 
     .feature-box {
